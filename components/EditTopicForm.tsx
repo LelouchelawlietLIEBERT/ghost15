@@ -24,7 +24,7 @@ const EditTopicForm: React.FC<rsd> = ({ id, title, description }) => {
       return;
     }
     try {
-      const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
+      const res = await fetch(`https://ghost15.vercel.app/api/topics/${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
