@@ -3,7 +3,17 @@
 body {
   background-image: url('/call-of-duty-modern-warfare-2-ghost-2022-4k-wallpaper-uhdpaper.com-464@1@h.jpg');
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 .cl-internal-1eekank {
