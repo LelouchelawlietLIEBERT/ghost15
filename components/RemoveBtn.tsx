@@ -11,7 +11,7 @@ const RemoveBtn: React.FC<rsd> = ({ id }) => {
   const removeTopic = async () => {
     const confirmed = confirm("Are you Sure ?");
     if (confirmed) {
-      await fetch(`http://localhost:3000/api/topics?id=${id}`, {
+      await fetch(`https://ghost15.vercel.app/api/topics?id=${id}`, {
         method: "DELETE",
       });
       window.location.reload();
