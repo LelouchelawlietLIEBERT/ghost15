@@ -3,7 +3,7 @@ import EditTopicForm from "@/components/EditTopicForm";
 
 const getTopicbyId = async (id: string) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/topics/${id}`);
+    const res = await fetch(`https://ghost15.vercel.app/api/topics/${id}`);
     if (!res.ok) {
       throw new Error("Failed to fetch");
     }
