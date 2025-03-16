@@ -5,7 +5,7 @@ import RemoveBtn from "./RemoveBtn";
 
 const GetTopics = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/topics", {
+    const res = await fetch("https://ghost15.vercel.app/api/topics", {
       cache: "no-store",
     });
     if (!res.ok) {
